@@ -11,7 +11,7 @@ add_action('init', 'has_origin_cookie');
 function has_origin_cookie(){
     if (!is_admin() && function_exists('rocket_clean_home')){
         if ( !isset($_COOKIE["origin_country"])) {
-				define( 'DONOTCACHEPAGE', true );
+			define( 'DONOTCACHEPAGE', true );
 		}else{
 			$lang = $_COOKIE["origin_country"];
 			$langsubstr = substr($_COOKIE["origin_country"], 0, 2);
