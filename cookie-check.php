@@ -5,6 +5,8 @@
  * Version:     1.0.0
  * Author:      Piotr
  */
+ 
+defined( 'ABSPATH' ) or die();
 
 add_action('init', 'has_origin_cookie');
 
